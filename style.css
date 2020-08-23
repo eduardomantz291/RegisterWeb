@@ -1,1 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Lato:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(241, 239, 239);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: rgb(0, 0, 0);
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  animation: title 500ms;
+  animation-delay: 240ms;
+  animation-fill-mode: backwards;
+  text-decoration: underline;
+}
+
+form {
+  margin: 60px 0;
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px gray;
+}
+
+form .input-block {
+  margin-bottom: 20px;
+}
+
+form .input-block label {
+  font-size: 12pt;
+  font-family: 'Alata', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+form .input-block input {
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 7px;
+  font-size: 16px;
+  color: #000000;
+  border-radius: 2px;
+  border: 2px solid #000000;
+  outline-color: #000000;;
+  font-family: 'Merriweather Sans', sans-serif;
+s}
+
+form .btn-register {
+  display: block;
+  min-width: 120px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 25px;
+  margin: auto;
+  padding: 7px;
+  transition: background 400ms ease;
+}
+
+.btn-register:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #000000;
+  box-shadow: inset 0 0 0 3px #000000;
+}
+
+header.titleweb {
+  animation: TitleDown 500ms;
+}
+
+form {
+  overflow: hidden;
+}
+
+form {
+  animation: fade 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(1) {
+  animation: move 500ms;
+  animation-delay: 150ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(2) {
+  animation: move 500ms;
+  animation-delay: 350ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(3) {
+  animation: move 500ms;
+  animation-delay: 550ms;
+  animation-fill-mode: backwards;
+}
+
+form .btn-register {
+  animation: move 500ms;
+  animation-delay: 750ms;
+  animation-fill-mode: backwards;
+}
+
+header {
+  animation: TitleDown 500ms;
+}
+
+form {
+  overflow: hidden;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes move {
+  from {
+    opacity: 0;
+    transform: translateX(-35%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translateY(-50%)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+.form-Right{
+  animation: Right 1s forwards;
+}
+
+@keyframes TitleDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
