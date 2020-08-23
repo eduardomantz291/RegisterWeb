@@ -5,7 +5,7 @@ server.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/account.html");
 })
 
-server.get("/register.html", (req, res) => {
+server.get("/register", (req, res) => {
   res.sendFile(__dirname + "/views/register.html");
 })
 
