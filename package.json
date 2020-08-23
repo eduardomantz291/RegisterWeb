@@ -1,0 +1,19 @@
+{
+  "name": "registerweb",
+  "version": "1.0.0",
+  "description": "RegisterWeb is a project that started for my studies of node.js and mysql.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardomantz291/RegisterWeb.git"
+  },
+  "author": "Eduardo Mantz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardomantz291/RegisterWeb/issues"
+  },
+  "homepage": "https://github.com/eduardomantz291/RegisterWeb#readme"
+}
