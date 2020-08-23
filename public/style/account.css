@@ -12,8 +12,30 @@ body {
 
 header {
   background: rgb(0, 0, 0);
-
+  display: flex;
   text-align: center;
+}
+
+header .btn {
+  min-width: 90px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 25px;
+  margin-left: 20px;
+  margin-top: 23px;
+  padding: 7px;
+  transition: background 400ms ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 3px #ffffff;
 }
 
 h1 {
@@ -21,6 +43,7 @@ h1 {
   padding-bottom: 10px;
   font-family: 'Lato', sans-serif;
   color: #ffffff;
+  margin-left: 100px;
   animation: title 500ms;
   animation-delay: 240ms;
   animation-fill-mode: backwards;
@@ -158,5 +181,47 @@ form {
   }
   to {
     transform: translateY(0%);
+  }
+}
+
+@media (min-width: 700px) {
+  header {
+    background: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+  }
+  
+  header .btn {
+    min-width: 90px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 25px;
+    margin-left: 390px;
+    margin-top: 23px;
+    padding: 7px;
+    transition: background 400ms ease;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    box-shadow: inset 0 0 0 3px #ffffff;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin-left: 500px;
+    animation: title 500ms;
+    animation-delay: 240ms;
+    animation-fill-mode: backwards;
+    text-decoration: underline;
   }
 }
