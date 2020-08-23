@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eduardomantz291/RegisterWeb/issues"
   },
-  "homepage": "https://github.com/eduardomantz291/RegisterWeb#readme"
+  "homepage": "https://github.com/eduardomantz291/RegisterWeb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
