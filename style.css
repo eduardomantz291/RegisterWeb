@@ -34,7 +34,7 @@ h1 {
 }
 
 form {
-  margin: 60px 0;
+  margin: 20px 0;
   background-color: white;
   padding: 30px 25px;
   border-radius: 15px;
@@ -62,7 +62,7 @@ form .input-block input {
   border: 2px solid #000000;
   outline-color: #000000;;
   font-family: 'Merriweather Sans', sans-serif;
-s}
+}
 
 form .btn-register {
   display: block;
@@ -114,9 +114,22 @@ form .input-block:nth-child(3) {
   animation-fill-mode: backwards;
 }
 
-form .btn-register {
+form .input-block:nth-child(4) {
   animation: move 500ms;
   animation-delay: 750ms;
+  animation-fill-mode: backwards;
+}
+
+form .input-block:nth-child(5) {
+  animation: move 500ms;
+  animation-delay: 950ms;
+  animation-fill-mode: backwards;
+}
+
+
+form .btn-register {
+  animation: move 500ms;
+  animation-delay: 1150ms;
   animation-fill-mode: backwards;
 }
 

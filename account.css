@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lato:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 239, 239);
+}
+
+header {
+  background: rgb(0, 0, 0);
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  animation: title 500ms;
+  animation-delay: 240ms;
+  animation-fill-mode: backwards;
+  text-decoration: underline;
+}
+
+main {
+  padding: 30px, 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Alata', sans-serif;
+}
+
+
+.account-item {
+  margin-top: 2.4rem;
+}
+
+.account-item div.user {
+  background: white;
+  width: 30rem;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: gray 3px 2px 10px;
+  display: flex;
+  align-items: center;
+}  
+
+.account-item div.user img {
+  width: 8rem;
+  height: 8rem;
+  border: solid gray 5px;
+  border-radius: 50%;
+}
+
+.account-item div.user div {
+  margin-left: 2.4rem;
+}
+
+.account-item div.user div p {
+  padding: 2px;
+}
+
+.account-item div.user div strong {
+  font: 700 2.4rem;
+  font-family: 'Alata', sans-serif;
+  text-decoration: underline;
+  display: block;
+}
+
+
+header.titleweb {
+  animation: TitleDown 500ms;
+}
+
+form {
+  overflow: hidden;
+}
+
+div.user {
+  animation: fade 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: backwards;
+}
+
+div.user img{
+  animation: fade  500ms;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
+}
+
+div.user div {
+  animation: fade 500ms;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
+} 
+
+header {
+  animation: TitleDown 500ms;
+}
+
+form {
+  overflow: hidden;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveL {
+  from {
+    opacity: 0;
+    transform: translateX(-25%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+@keyframes moveR {
+  from {
+    opacity: 0;
+    transform: translateX(35%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%)
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+    transform: translateY(-50%)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+@keyframes TitleDown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
