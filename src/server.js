@@ -1,6 +1,7 @@
 const express = require("express");
 const server = express();
 const bodyParser = require("body-parser");
+const Usuario = require("./models/Usuario")
 
 const nunjucks = require("nunjucks");
 nunjucks.configure("src/views", {
@@ -18,7 +19,20 @@ function Register(req, res) {
 }
 
 function Post(req, res) {
-  return res.send("Nome: " + req.body.registerName + "Email: " + req.body.registerEmail + "avatar:" + req.body.registerAvatar + "bio: " + req.body.textareaBio)
+  
+   Usuario.create({
+     name: req.body.registerName,
+     email: req.body.registerEmail,
+     password: req.body.registerPassword,
+     avatar: req.body.registerAvatar,
+     bio: req.body.textareaBio
+   }).then( () => {
+     res.send("Usuario registrado com sucesso!");
+   }).catch( erro => {
+     res.send("Houve um erro na hora do Registro" + erro);
+   })
+
+  //return res.send("Nome: " + req.body.registerName + "Email: " + req.body.registerEmail + "avatar:" + req.body.registerAvatar + "bio: " + req.body.textareaBio)
 }
 
 server.use(bodyParser.urlencoded({extended: false}))
