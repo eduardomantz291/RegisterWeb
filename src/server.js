@@ -27,7 +27,7 @@ function Post(req, res) {
      avatar: req.body.registerAvatar,
      bio: req.body.textareaBio
    }).then( () => {
-     res.send("Usuario registrado com sucesso!");
+     res.redirect("/");
    }).catch( erro => {
      res.send("Houve um erro na hora do Registro" + erro);
    })
