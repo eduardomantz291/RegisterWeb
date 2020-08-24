@@ -4,7 +4,7 @@
   "description": "RegisterWeb is a project that started for my studies of node.js and mysql.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
