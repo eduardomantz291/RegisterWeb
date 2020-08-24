@@ -20,6 +20,14 @@ function Register(req, res) {
   return res.render("register.html")
 }
 
+function Deletar(req,res) {
+  return Usuario.destroy({where: {'id': req.params.id}}).then( () =>{
+    res.redirect("/");
+  } ).catch( erro => {
+      res.send("Houve um erro! " + erro);
+  })
+}
+
 function Post(req, res) {
   
    Usuario.create({
@@ -33,8 +41,6 @@ function Post(req, res) {
    }).catch( erro => {
      res.send("Houve um erro na hora do Registro" + erro);
    })
-
-  //return res.send("Nome: " + req.body.registerName + "Email: " + req.body.registerEmail + "avatar:" + req.body.registerAvatar + "bio: " + req.body.textareaBio)
 }
 
 server.use(bodyParser.urlencoded({extended: false}))
@@ -42,6 +48,7 @@ server.use(bodyParser.json())
 server.use(express.static("public"))
 .get("/", Index)
 .get("/register", Register)
+.get("/deletar/:id", Deletar)
 .post("/post", Post)
 .listen(5500, () => {
   console.log("Servidor rodando!");

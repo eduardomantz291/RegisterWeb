@@ -20,6 +20,7 @@
           
           <div class="user">
             <img src="{{ user.avatar }}" alt="{ {user.name }}">
+            <a href="/deletar/{{ user.id }}"><button class="btn-delete">Deletar conta</button></a>
             <div>
               <strong class="name">{{ user.name }}</strong>
               <p>{{ user.email }}</p>
@@ -29,6 +30,8 @@
 
         </article>
         {%endfor%}
+
+        </article>
       </main>
     </div>
   </body>
