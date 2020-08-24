@@ -10,7 +10,9 @@ nunjucks.configure("src/views", {
 })
 
 function Index(req, res) {
-  return res.render("account.html")
+  Usuario.findAll().then( users => {
+    return res.render("account.html", {users: users})
+  })
 }
 
 function Register(req, res) {
